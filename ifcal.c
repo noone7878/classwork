@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 
 int main(void){
@@ -10,7 +11,7 @@ int main(void){
     scanf("%d", &b);
 
     printf(
-        "what operation do you want to perform \n 1. addition \n 2. subtraction \n 3. multiplication \n 4. division\n choose the operation"
+        "what operation do you want to perform \n 1. addition \n 2. subtraction \n 3. multiplication \n 4. division\n choose the operation "
     );
     scanf("%d", &opr);
 
@@ -27,7 +28,7 @@ int main(void){
                     ans = a/b;
                 }else {
                     if (opr == 5){
-                        ans = 0;
+                        exit(1);
                     }
                 }
             }

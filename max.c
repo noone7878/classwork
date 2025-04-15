@@ -18,5 +18,6 @@ int main(void){
             max = c;
         }
     }
+
     printf("max is %d", max);
 }
